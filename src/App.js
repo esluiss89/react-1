@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import '/Users/mono/Desktop/react-1/src/App.css';
+import Card from '/Users/mono/Desktop/react-1/src/Components/Card';
+import Titulo from '/Users/mono/Desktop/react-1/src/Components/Header';
+import Footer from '/Users/mono/Desktop/react-1/src/Components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Titulo Titulo="Galeria de imágenes con React"/>
+      <Card source={require('./assets/img/naruto.jpeg')} nombre="Naruto Niño" descripcion="Naruto de Pequeño."/>
+      <Card source={require('./assets/img/naruto_2.jpeg')} nombre="Naruto Adolecente" descripcion="Naruto ya mas adolecente."/>
+      <Card source={require('./assets/img/naruto_3.jpeg')} nombre="Naruto Hokage" descripcion="Naruto ya siendo el hokage de la aldea."/>
+      <Footer/>
     </div>
   );
 }
